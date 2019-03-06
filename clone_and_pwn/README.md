@@ -2,7 +2,7 @@ Clone & Pwn
 ===========
 
 **Original:**  https://github.com/Rogdham/CVE-2018-11235  
-**Author:**    Alejandro Caceres &lt;mhaase@hyperiongray.com&gt;,
+**Author:**    Alejandro Caceres &lt;acaceres@hyperiongray.com&gt;,
                Mark E. Haase &lt;mhaase@hyperiongray.com&gt;  
 **Date:**      2018-06-04  
 **CVE:**       [CVE-2018-11235](https://nvd.nist.gov/vuln/detail/CVE-2018-11235)  
