@@ -7,7 +7,7 @@ Clone & Pwn
 **Date:**      2018-06-04  
 **CVE:**       [CVE-2018-11235](https://nvd.nist.gov/vuln/detail/CVE-2018-11235)  
 **Advisory:**  https://staaldraad.github.io/post/2018-06-03-cve-2018-11235-git-rce/  
-**Tested on:** Ubuntu 18.04, Git 2.17.0, Python 2.7
+**Tested on:** Ubuntu 18.04, Git 2.17.0, Python 3
 
 Demo
 ----

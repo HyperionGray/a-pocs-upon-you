@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 import socket, subprocess, os
 
 CONNECT_BACK_HOST = "127.0.0.1"

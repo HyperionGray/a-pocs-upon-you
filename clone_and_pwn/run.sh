@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 if [ -d "tmp" ]; then
     rm -fr tmp
 fi
 
-function make_repo {
+make_repo() {
     mkdir tmp
     git init tmp/repo
     pushd tmp/repo
@@ -30,7 +30,7 @@ function make_repo {
 }
 
 echo "[*] Creating repository..."
-make_repo &> /dev/null
+make_repo > /dev/null 2>&1
 echo "[*] Executing git daemon..."
 echo "[*] Start your netcat listener, then run this on the client:"
 echo ""

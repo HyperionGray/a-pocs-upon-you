@@ -19,6 +19,14 @@ We have nicknamed this "SSHtranger Things" because the bug is so old it could be
 exploited by an 8-bit Demogorgon. Tested on Python 3.6.7 and requires `paramiko`
 package.
 
+## Installation
+
+Install dependencies:
+
+    $ pip install -r requirements.txt
+
+## Usage
+
 The server listens on port 2222. It accepts any username and password, and it
 generates a new host key every time you run it.
 
