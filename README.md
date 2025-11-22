@@ -54,6 +54,24 @@ Remote code execution in Dnsmasq via DHCPv6 request.
 #### [SSHtranger Things (CVE-2019-6111, CVE-2019-6110)](sshtranger_things/)
 SCP client vulnerabilities allowing arbitrary file writes and display manipulation.
 
+### Exploit Skeletons
+
+These are skeleton exploits for high-severity vulnerabilities that currently lack public 
+exploits. They demonstrate attack structure and would require additional research and 
+development to become fully functional.
+
+#### [CVE-2024-43639 - Windows Kerberos KDC Proxy RCE](cve-2024-43639-windows-kerberos/)
+Windows Kerberos KDC Proxy RCE via ASN.1 parsing vulnerability.
+- **Severity**: Critical (CVSS 9.8)
+
+#### [CVE-2024-0012 - Palo Alto PAN-OS Authentication Bypass](cve-2024-0012-panos-auth-bypass/)
+Palo Alto Networks PAN-OS authentication bypass vulnerability.
+- **Severity**: Critical (CVSS 9.8)
+
+#### [CVE-2024-49112 - Windows LDAP Zero-Click RCE](cve-2024-49112-windows-ldap/)
+Windows LDAP zero-click RCE on Domain Controllers.
+- **Severity**: Critical (CVSS 9.8)
+
 ## Usage
 
 Each exploit directory contains:
