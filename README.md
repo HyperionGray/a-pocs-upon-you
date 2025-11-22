@@ -13,6 +13,8 @@ that is too small to deserve it's own repository.
 
 ## Exploits
 
+This repository contains POCs for the following vulnerabilities:
+
 ### Modern Vulnerabilities (2020+)
 
 #### [PHP CGI Argument Injection (CVE-2024-4577)](php-cgi-cve-2024-4577/)
@@ -28,13 +30,19 @@ code execution in applications using Apache Log4j 2 through JNDI injection.
 - **Severity**: Critical (CVSS 10.0)
 - **Affected**: Apache Log4j 2.0-beta9 through 2.14.1
 
+#### [ProxyShell (CVE-2021-34473)](proxyshell-cve-2021-34473/)
+Microsoft Exchange Server RCE vulnerability chain that allows unauthenticated attackers to execute arbitrary code as SYSTEM.
+
 #### [Spring4Shell (CVE-2022-22965)](spring4shell-cve-2022-22965/)
 Remote code execution vulnerability in Spring Framework affecting applications deployed
 as WAR files on Apache Tomcat. Exploits data binding to write malicious JSP webshells.
 - **Severity**: Critical (CVSS 9.8)
 - **Affected**: Spring Framework 5.3.0-5.3.17, 5.2.0-5.2.19
 
-### Legacy Vulnerabilities
+#### [Follina (CVE-2022-30190)](follina-cve-2022-30190/)
+Microsoft Office RCE vulnerability exploiting MSDT, requiring no macros and triggerable by simply opening a document.
+
+### Legacy Vulnerabilities (Pre-2020)
 
 #### [Clone & Pwn (CVE-2018-11235)](clone_and_pwn/)
 Git client vulnerability that executes arbitrary code when cloning a malicious repository
@@ -45,3 +53,44 @@ Remote code execution in Dnsmasq via DHCPv6 request.
 
 #### [SSHtranger Things (CVE-2019-6111, CVE-2019-6110)](sshtranger_things/)
 SCP client vulnerabilities allowing arbitrary file writes and display manipulation.
+
+### Exploit Skeletons
+
+These are skeleton exploits for high-severity vulnerabilities that currently lack public 
+exploits. They demonstrate attack structure and would require additional research and 
+development to become fully functional.
+
+#### [CVE-2024-43639 - Windows Kerberos KDC Proxy RCE](cve-2024-43639-windows-kerberos/)
+Windows Kerberos KDC Proxy RCE via ASN.1 parsing vulnerability.
+- **Severity**: Critical (CVSS 9.8)
+
+#### [CVE-2024-0012 - Palo Alto PAN-OS Authentication Bypass](cve-2024-0012-panos-auth-bypass/)
+Palo Alto Networks PAN-OS authentication bypass vulnerability.
+- **Severity**: Critical (CVSS 9.8)
+
+#### [CVE-2024-49112 - Windows LDAP Zero-Click RCE](cve-2024-49112-windows-ldap/)
+Windows LDAP zero-click RCE on Domain Controllers.
+- **Severity**: Critical (CVSS 9.8)
+
+## Usage
+
+Each exploit directory contains:
+- **README.md** - Detailed documentation, usage instructions, and mitigation strategies
+- **exploit.py** (or similar) - Main exploit script
+- **requirements.txt** - Python dependencies (if applicable)
+
+## Security Notice
+
+⚠️ **IMPORTANT**: These exploits are provided for educational and authorized penetration testing purposes only. Unauthorized access to computer systems is illegal. Always obtain proper authorization before testing any vulnerability.
+
+## Contributing
+
+We welcome contributions of new POCs, especially for modern vulnerabilities that have significant impact. Please ensure:
+- The vulnerability is from 2020 or later (for modern exploits)
+- It has significant impact (RCE, privilege escalation, memory leaks, etc.)
+- Code is well-documented and follows the existing structure
+- Include proper attribution and CVE references
+
+## License
+
+Individual exploits may have their own licenses. Please check each directory for specific licensing information.
