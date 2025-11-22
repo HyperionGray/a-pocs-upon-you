@@ -20,12 +20,23 @@ Contents
 * **[dnsmasq-cve-2017-14493](dnsmasq-cve-2017-14493/)** - CVE-2017-14493: Dnsmasq DHCPv6 RCE
 * **[sshtranger_things](sshtranger_things/)** - CVE-2019-6111, CVE-2019-6110: SCP client vulnerabilities
 
-### Exploit Skeletons
+### Advanced Exploit Demonstrations
 
-These are skeleton exploits for high-severity vulnerabilities that currently lack public 
-exploits. They demonstrate attack structure and would require additional research and 
-development to become fully functional.
+These exploits demonstrate vulnerabilities with proper protocol implementation and 
+sophisticated attack structures. They use benign payloads for research and educational 
+purposes.
 
 * **[cve-2024-43639-windows-kerberos](cve-2024-43639-windows-kerberos/)** - CVE-2024-43639: Windows Kerberos KDC Proxy RCE (CVSS 9.8)
+  - Proper ASN.1 DER encoding of Kerberos messages
+  - Complete KKDCP protocol implementation
+  - Integer overflow exploitation theory
+  
 * **[cve-2024-0012-panos-auth-bypass](cve-2024-0012-panos-auth-bypass/)** - CVE-2024-0012: Palo Alto PAN-OS Authentication Bypass (CVSS 9.8)
+  - Fingerprinting and version detection
+  - Header manipulation for authentication bypass
+  - Read-only API interaction demonstrations
+  
 * **[cve-2024-49112-windows-ldap](cve-2024-49112-windows-ldap/)** - CVE-2024-49112: Windows LDAP Zero-Click RCE (CVSS 9.8)
+  - Proper ASN.1 BER encoding for LDAP
+  - Valid bind and search request construction
+  - Heap corruption exploitation theory
