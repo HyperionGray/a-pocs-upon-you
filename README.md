@@ -13,7 +13,6 @@ that is too small to deserve it's own repository.
 
 ## Exploits
 
-<<<<<<< HEAD
 This repository contains POCs for the following vulnerabilities:
 
 ### Modern Vulnerabilities (2020+)
@@ -89,4 +88,3 @@ Remote code execution in Dnsmasq via DHCPv6 request.
 
 #### [SSHtranger Things (CVE-2019-6111, CVE-2019-6110)](sshtranger_things/)
 SCP client vulnerabilities allowing arbitrary file writes and display manipulation.
->>>>>>> bf9bc6c (Add three modern ExploitDB-based exploits: PHP CGI, Log4Shell, and Spring4Shell)
